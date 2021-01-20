@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+#main header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main header .icons {
+  padding: 30px;
+}
+
+#main header .icons i {
+  margin-right: 10px;
+  font-size: 13px;
+  color: #fff;
+  background-color: deeppink;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#main header .icons i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#main header .icons #fb {
+  padding: 6px 8px;
+}
+
+#main header .icons #fb:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#main header #logo {
+  padding-top: 30px;
+  margin-left: 200px;
+}
+
+#main header #logo img {
+  width: 200px;
+}
+
+#main header nav {
+  margin-top: 30px;
+}
+
+#main header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main header nav ul li {
+  margin-left: 30px;
+}
+
+#main header nav ul li a {
+  color: #000;
+}
+
+#main header nav ul li .active {
+  color: deeppink;
+}
+
+#main header nav ul #cross {
+  position: relative;
+  top: -150px;
+  left: 130px;
+  display: none;
+}
+
+#main header nav ul #cross i {
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#main header #bars {
+  padding: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+
+#main header #bars i {
+  font-size: 30px;
+}
+
+#main .content {
+  margin-top: 120px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 0 30px;
+}
+
+#main .content #para_head {
+  color: #575757;
+  margin: 0;
+}
+
+#main .content p {
+  color: gray;
+  margin-bottom: 30px;
+  z-index: 2;
+  text-align: center;
+}
+
+#main .content h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  z-index: 2;
+  text-align: center;
+}
+
+#main .content h1 span {
+  color: #ff00bf;
+}
+
+#main .content a {
+  padding: 15px 25px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#e975af), to(#ff00b3));
+  background: linear-gradient(90deg, #e975af, #ff00b3);
+  border-radius: 30px;
+}
+
+#main .content a:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#e975af), to(#ff00b3));
+  background: linear-gradient(-90deg, #e975af, #ff00b3);
+}
+
+#main .content .circle1 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ffec7e;
+  z-index: 1;
+}
+
+#main .content .circle2 {
+  position: absolute;
+  top: 33%;
+  left: 67%;
+  width: 110px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #7effce;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1190px) {
+  #main header #logo {
+    margin: 0;
+  }
+  #main header nav ul {
+    top: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 200px;
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    z-index: 2000;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #main header nav ul li {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  #main header nav ul li a {
+    font-size: 22px;
+  }
+  #main header nav ul #cross {
+    display: block;
+  }
+  #main header #bars {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #main header #logo {
+    margin-left: 20px;
+  }
+  #main header #logo img {
+    width: 150px;
+  }
+  #main header .icons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0;
+    z-index: 2000;
+  }
+  #main header .icons i {
+    display: block;
+    margin-bottom: 5px;
+  }
+  #main .content h1 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
